@@ -1,0 +1,54 @@
+import "styled-components";
+
+declare module "styled-components" {
+  export interface DefaultTheme {
+    shadows: {
+      popup: string;
+      modal: string;
+      field: string;
+    };
+
+    colors: {
+      // Colors
+      primary100: string;
+      primary60: string;
+      primary50: string;
+      primary10: string;
+      primary6: string;
+      primary5: string;
+      primaryHover: string;
+
+      // Basic
+      white100: string;
+      white60: string;
+      white38: string;
+      white12: string;
+      black100: string;
+      black90: string;
+      black80: string;
+      black70: string;
+      black60: string;
+      black38: string;
+      black30: string;
+      black12: string;
+      black10: string;
+      black5: string;
+      black4: string;
+      black2: string;
+      gray100: string;
+
+      // Status
+      [greenStatus: string]: string;
+      [yellowStatus: string]: string;
+      [redStatus: string]: string;
+      redStatus5: string;
+      [blueStatus: string]: string;
+      [grayStatus: string]: string;
+
+      // Component
+      labelBox: string;
+      scrollTrack: string;
+      authBackground: string;
+    };
+  }
+}
